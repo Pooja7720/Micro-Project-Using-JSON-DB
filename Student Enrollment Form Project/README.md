@@ -1,7 +1,10 @@
 # Student Enrollment form
 
 ## Description:
-I have created one mini project in which I have used JSON Power DB for databases, and HTML, CSS and JS languages for frontend and connecting to database. In this project, I have created 3 buttons for save, change or reset the data entered in form. **The most important thing is the primary key is student roll number in this case.**. This entered code is readable. It was very exciting experience for me to build this mini project 🤩. Without any page referesh it gives the output records and it was so amazing. You can check it on by running the index.html file. I am also uploading the output images of this form.
+I have created one mini project in which I have used JSON Power DB for databases, and HTML, CSS and JS languages for frontend and connecting to database. In this project, I have created 3 buttons for save, change or reset the data entered in form. **The most important thing is the primary key is student roll number in this case.** This entered code is readable. It was very exciting experience for me to build this mini project 🤩. Without any page referesh it gives the output records and it was so amazing. You can check it on by running the index.html file. I am also uploading the output images of this form.
+
+### How to check that student roll number is primary key?
+**Answer : ** Here while changing data it will load all the data automatically if it's present in database. Then you can observe that the student roll number option is disabled. So that you can't change it. In case of primary key, same thing happens. **WE CAN NOT CHANGE PRIMARY KEY ONCE CREATED**. And same thing happens with student roll number. And hence student roll number is a primary key in this case.
 
 ## Benifits of using JSONPowerDB:
 - Simplest way to retrieve data in a JSON format.
