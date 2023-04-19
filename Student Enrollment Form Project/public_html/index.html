@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Student Details Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet"
+              href="CSS/index.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--    FOR API CALLS -->
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+
+        <!--    FONTS    -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            <h2 class="movingtext">Fill out the below form to become a part of<a href="https://login2explore.com/"> Login2Xplore</a></h2>
+        </div>
+        
+        <div style="display:flex;">
+
+
+            <div style="width:50%;display:inline-block;margin:2rem;margin-top:8rem;">
+                <img src="Images/Image.png" alt="Images/Image.png">
+            </div>
+            <div class="container">
+
+                <form id="stForm" method="post">
+                    <div class="form-group">
+                        <h4>Student Roll No:</h4> 
+                        <input type="text" class="form-control" name="stRollNo" id="stRollNo" onchange="getSt()"
+                               placeholder="Enter Your Roll Number" required>
+                    </div>
+                    <div class="form-group">
+                        <h4>Student Full Name:</h4> 
+                        <input type="text" class="form-control" id="stName"
+                               placeholder="Enter Your Full Name" name="stName">
+                    </div>
+                    <div class="form-group">
+                        <h4>Student Class:</h4>
+                        <input type="text" class="form-control" id="stClass"
+                               placeholder="Enter Your Class" name="stClass">
+                    </div>
+                    <div class="form-group">
+                        <h4>Student Birth Date:</h4> 
+                        <input type="date" class="form-control" id="stBirthDate"
+                               placeholder="Enter Your Birth Date" name="stBirthDate">
+                    </div>
+
+                    <div class="form-group">
+                        <h4>Student Address:</h4> 
+                        <input type="text" class="form-control" id="stAddress"
+                               placeholder="Enter Your Address" name="stAddress">
+                    </div>
+                    <div class="form-group">
+                        <h4>Student Enrollment Date:</h4> 
+                        <input type="date" class="form-control" id="stEnrollDate"
+                               placeholder="Enter Enrollment Date" name="stEnrollDate">
+                    </div>
+
+
+                    <input type="button" class="btn btn-primary" disabled id="stSave" value="Save"
+                           onclick="saveData();">
+
+                    <input type="button" class="btn btn-primary" disabled id="stChange" value="Change"
+                           onclick="changeData();">
+
+                    <input type="button" class="btn btn-primary" disabled id="stReset" value="Reset"
+                           onclick="resetForm();">
+                </form>
+            </div>
+        </div>
+        <!--    FOCUS IS ON EMPLOYEE ID  -->
+        <script>
+            $("#stRollNo").focus();
+        </script>
+
+        <script src="JS/index.js"></script>
+
+</html>
