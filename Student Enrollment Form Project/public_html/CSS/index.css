@@ -1,0 +1,45 @@
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+.heading a:hover{
+    transform: scale(0.9,0.9);
+    opacity:0.8;
+}
+.container{
+    width:50%;
+    display:inline-block;
+    background-color:lightgray;
+    margin:2rem;
+    border-radius:5%;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top:8rem;
+}
+#stSave:hover{
+    transform: scale(0.9,0.9);
+    opacity:0.8;
+}
+#stChange:hover{
+    transform: scale(0.9,0.9);
+    opacity:0.8;
+}
+#stReset:hover{
+    transform: scale(0.9,0.9);
+    opacity:0.8;
+}
+
+.movingtext {
+    position: absolute;
+    
+    left: 0;
+    transform: translateX(-100%);
+    animation: moveText 8s linear infinite;
+}
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
